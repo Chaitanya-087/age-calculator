@@ -1,0 +1,156 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0 ,0%, 94%);
+}
+
+main {
+    width: 100vw;
+    max-width: 90%;
+    min-height: 100vh;
+    padding-block:1rem;
+    margin:0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    max-width: 500px;
+    width: 100%;
+    padding: 2rem 2rem 3rem 2rem;
+    background-color: hsl(0, 0%,100%);
+    box-shadow: 0 0 16px 0px hsl(0,0%,94%);
+    border-radius: 12px;
+    border-bottom-right-radius: 120px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+label {
+    color: hsl(0, 1%, 44%);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+input {
+    max-width: 100px;
+    padding-inline:0.6rem;
+    padding-block: 0.5rem;
+
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 3px;
+    outline: none;
+    font-size: 24px;
+    font-weight: 700;
+    background: transparent;
+}
+
+input:focus {
+    border: 1px solid hsl(259, 100%, 65%);
+}
+
+input::placeholder {
+    color:hsl(0, 0%, 86%);
+    font-size: 21px;
+    
+}
+
+.divider {
+    width: 95%;
+    height: 1px;
+    background-color: hsl(0, 0%, 86%);
+    margin-block: 1.5rem;
+    position: relative;
+}
+
+.btn {
+    border: none;
+    cursor: pointer;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    background-color: hsl(259,100%, 65%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+h1 {
+    font-style: italic;
+    font-weight: 800;
+    font-size: 4rem;
+    line-height: 1;
+}
+
+h1 > span {
+    color: hsl(259, 100%, 65%);
+}
+
+input::marker{
+    color: hsl(0, 1%, 44%);
+}
+
+@media screen and (width < 768px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+    .divider {
+        width: 100%;
+        margin-block: 4rem;
+    }
+    .btn {
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.form-control {
+    position: relative;
+}
+
+.validation-output {
+    position: absolute;
+    color: hsl(0, 100%, 67%);
+    font-size: 8px;
+    width: 100%;
+    bottom:0;
+    transform: translateY(calc(100% + 2px));
+    font-style:italic;
+    font-weight: 400;
+    text-transform: capitalize;
+    left: 0;
+}
+
+
+.form-control.error input{
+    border-color: hsl(0, 100%, 67%);
+}
+.form-control.error input:focus{
+    border-color: hsl(0, 100%, 67%);
+}
+
+
+.form-control.error label {
+    color: hsl(0, 100%, 67%);
+}
+
+.form-control.empty input{
+    border-color: hsl(0, 100%, 67%);
+}
+.form-control.empty label {
+    color: hsl(0, 100%, 67%);
+}

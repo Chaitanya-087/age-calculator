@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+    <title>Age calculator app</title>
+  </head>
+  <body>
+    <main>
+      <article class="card">
+        <form action="#" id="form">
+          <div class="wrapper">
+            <div class="form-control">
+              <label for="birth-date">day</label>
+              <br />
+              <input type="number" title="birth-date" id="birth-date" placeholder="DD" />
+              <span class="validation-output"></span>
+            </div>
+            <div class="form-control">
+              <label for="birth-month">month</label>
+              <br />
+              <input type="number" title="birth-month" id="birth-month" placeholder="MM" />
+              <span class="validation-output"></span>
+            </div>
+            <div class="form-control">
+              <label for="birth-year">year</label>
+              <br />
+              <input type="number" title="birth-year" id="birth-year" placeholder="YYYY"/>
+              <span class="validation-output"></span>
+            </div>
+          </div>
+          <div class="divider">
+            <button type="submit"  title="calculate" class="btn">
+              <img src="./assets/images/icon-arrow.svg" alt="arrow" />
+            </button>
+          </div>
+        </form>
+        <div class="result">
+          <h1>
+            <span class="r-years">- -</span> years
+          </h1>
+          <h1>
+            <span class="r-months">- -</span> months
+          </h1>
+          <h1>
+            <span class="r-days">- -</span> days
+          </h1>
+        
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
